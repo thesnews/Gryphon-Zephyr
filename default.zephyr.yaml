@@ -1,0 +1,22 @@
+---
+server: server.com
+port: 22
+username: username
+ignore-scm: true
+sync:
+  -
+    remote: /path/to/remote/
+    local: /path/to/local/
+    delete: true
+    exclude:
+      - foo.txt
+      - bar
+  -
+    remote: /path/to/remote-2/
+    local: /path/to/local-2/
+    exclude:
+      - foo.txt
+      - bar
+compress:
+  - /path/to/javascript/base.js
+  - /path/to/style/screen/mobile.css
