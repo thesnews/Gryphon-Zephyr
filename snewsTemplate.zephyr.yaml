@@ -1,0 +1,18 @@
+---
+server: statenews.com
+port: 37
+username: snews
+ignore-scm: true
+sync:
+  -
+    remote: /home/snews/templates/frontend/
+    local: /home/snews/Gryphon-Templates/tsn/templates/
+    delete: true
+    exclude:
+      - roost
+  -
+    remote: /home/snews/documents/style/gryphon/
+    local: /home/snews/Gryphon-Templates/tsn/style/gryphon/
+    delete: true
+    exclude:
+compress:

@@ -1,0 +1,28 @@
+---
+server: statenews.com
+port: 37
+username: snews
+ignore-scm: true
+sync:
+  -
+    remote: /home/snews/adpilot_app/
+    local: /home/snews/Gryphon-AdPilot/application/
+    exclude:
+      - private
+      - config/adpilot.config.php
+      - config/adpilot.config-dist.php
+      - scripts/.foundryPath
+      - docs
+  -
+    remote: /home/snews/documents/adpilot/
+    local: /home/snews/Gryphon-AdPilot/www/
+    exclude:
+      - foundry.config-dist.php
+      - foundry.config.php
+      - install.php
+      - 404.php
+  -
+    remote: /home/snews/wwwlibs/packages/adpilot/
+    local: /home/snews/Gryphon-AdPilot/plugin/adpliot/
+    exclude:
+compress:

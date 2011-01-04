@@ -1,0 +1,37 @@
+---
+server: statenews.com
+port: 37
+username: snews
+ignore-scm: true
+sync:
+  -
+    remote: /home/snews/roost_app/
+    local: /home/snews/Gryphon-Roost/application/
+    delete: true
+    exclude:
+      - www
+      - private
+      - config/roost.config.php
+      - config/roost.config-dist.php
+      - scripts/.foundryPath
+      - docs
+      - plugin
+  -
+    remote: /home/snews/documents/roost/
+    local: /home/snews/Gryphon-Roost/www/
+    exclude:
+      - foundry.config-dist.php
+      - foundry.config.php
+      - install.php
+      - 404.php
+  -
+    remote: /home/snews/wwwlibs/packages/roost/
+    local: /home/snews/Gryphon-Roost/plugin/roost/
+    exclude:
+      - template
+  -
+    remote: /home/snews/templates/frontend/roost/
+    local: /home/snews/Gryphon-Roost/plugin/roost/template/roost/
+    delete: true
+    exclude:
+compress:
