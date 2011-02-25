@@ -1,6 +1,6 @@
 ---
 server: statenews.com
-port: 37
+port: 22
 username: snews
 ignore-scm: true
 sync:
@@ -14,6 +14,7 @@ sync:
       - _private
       - packages/roost
       - packages/adpilot
+      - packages/bestof
       - packages/_eclipse
       - scripts/rake.py
   -
@@ -36,4 +37,5 @@ sync:
     exclude:
       - roost
       - adpilot
-compress:
+      - _roost
+    compress:

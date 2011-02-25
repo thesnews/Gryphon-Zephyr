@@ -23,6 +23,6 @@ sync:
       - 404.php
   -
     remote: /home/snews/wwwlibs/packages/adpilot/
-    local: /home/snews/Gryphon-AdPilot/plugin/adpliot/
+    local: /home/snews/Gryphon-AdPilot/plugin/adpilot/
     exclude:
 compress:

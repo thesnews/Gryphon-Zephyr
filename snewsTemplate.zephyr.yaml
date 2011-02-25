@@ -1,6 +1,6 @@
 ---
 server: statenews.com
-port: 37
+port: 22
 username: snews
 ignore-scm: true
 sync:
